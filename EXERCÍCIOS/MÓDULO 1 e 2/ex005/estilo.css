@@ -1,0 +1,25 @@
+
+h1 {
+    font-size: 60px;
+    color: red;
+    font-style: oblique;
+    border-color: rgb(8, 75, 8);
+    
+
+    }
+    p{
+        color: black;
+
+    }
+  
+  h2 {
+    font-size: 50px;
+    color: aqua;
+  }
+  h3 {
+    font-size: 30px;    
+    color: antiquewhite;
+  }
+  body {
+    background-color: floralwhite;
+  }

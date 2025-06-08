@@ -1,0 +1,40 @@
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
+    text-align-last: center;
+    color: darkgoldenrod;
+}
+
+h2{
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    
+}
+
+p{
+    font-size: 20px;
+}
+code {
+    font-size: 15px;
+}
+div.um {
+    width: 700px;
+    height: 200px;
+    border: 5px solid;
+    border-color: gold;
+    border-radius: 50px;
+    border-top-right-radius: 200px;
+    border-block-start-width: 20px;
+    border-style: outset;
+   
+}
+div.tres {
+    width: 350px;
+    height: 160px;
+    border: 5px solid;
+    border-color: silver;
+}
+a {
+    text-decoration: none;
+}

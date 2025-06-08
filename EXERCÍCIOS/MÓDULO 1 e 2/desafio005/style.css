@@ -1,0 +1,12 @@
+.one{
+    img{
+    block-size: 150px;
+    padding-top: 10px;
+    }
+}
+
+.two{
+    img{
+        block-size: 15px;
+    }
+}

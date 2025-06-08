@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir este site em vários dispositivos diferentes ou, simplesmente, diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 728px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/m.png" type="imagen/png">
+        <img src="imagens/foto-g.png" alt="flexivel">
+    </picture>
+    
+    <p>Usando a tag <abbr title="<picture>">picture</abbr> eu consigo criar varias souce para a minha midia, deixandoa mais flexivel para os diferentes formatos de tela e que um usuário pode acessar o meu site. </p>
+    
+    <h1>Colocando Audio no site</h1>
+
+    <audio src="midia/Silent Night - The Soundlings.mp3" controls></audio> <br>
+    <a href="midia/Silent Night - The Soundlings.mp3">Baixe a música aqui!</a>
+    <p>formatos que são compatíveis: MP3, WAV, OGG.</p>
+    <P>Evitar arquivos WAV porque são arquivos muito pesados, e para uma questao de navegção nao é interesante pois, atrasa o carregamento de um site atrapalhando a experiencia de um usuário.</P>
+
+    <p>Caso meu audio mp3 nao caregue eu posso utilizar o seguinte modelo, DEMONSTRÇÃO</p>
+    <pre>
+        <code>
+&lt;audio preload="metadata" controls autoplay loop&gt;
+    &lt;source src="aqui vai o nome do arquivo e da pasta em que está.mp3" type="audio/mpeg"&gt;
+    &lt;source src="aqui vai o nome do arquivo e da pasta em que está.ogg" type="audio/ogg"&gt;
+    &lt;source src="aqui vai o nome do arquivo e da pasta em que está.wav" type="audio/wav"&gt;
+    &lt;p&gt;Seu navegador não suporta áudio &lt;a href="aqui vai o nome do arquivo e da pasta em que está.mp3" sownload="nome do arquivo.mp3" type="audio/mpeg"&gt;&lt;a&gt;&lt;/p&gt;
+&lt;audio&gt;
+        </code>
+    </pre>
+    <p>Lembrando que as características:<br> 
+        <ins><strong>controls</strong></ins>: comando para aparecer botao para play manual do audio.<br>
+        <ins><strong>autoplay</strong></ins>: comando para que a musica começe a tocar assim que a página pe carregada (pode não funcionar em todos os navegadores, por isso a função control atrelada a ela)<br>
+        <ins><strong>loop</strong></ins>: comando para que a música reinicie logo após seu fim.
+    </p>
+</body>
+</html>

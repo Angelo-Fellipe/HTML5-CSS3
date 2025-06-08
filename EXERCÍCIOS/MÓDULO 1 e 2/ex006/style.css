@@ -1,0 +1,24 @@
+
+h3{
+    font-style: oblique;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+h4 {
+    font-size: 15px;
+    font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-size: 30px;
+    font-style: unset;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+    font-size: 25px;
+}
+
+body{
+    background-color: aquamarine;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vamos Criar um Link</title>
+</head>
+<body>
+    <h1>Usando Links Externos</h1>
+    <p>Eu posso usar o <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">repositório público do Github do Gustavo Guanabara</a>.</p>
+
+    <!--Ao usar o (target="_blank" rel="external") junto a tag <a> fez com que meu link seja redirecionado para outra aba, não deixando o meu site ser sobreposto pelo mesmo.-->
+
+    <p>Eu também posso criar um link para acessar o <a href="https://www.youtube.com/cursoemvideo" target="_blank" rel="external">Canal do youtube gratuito do Gustavo Guanabara</a></p>
+    
+    <h1>Usando Links Internos</h1>
+    <p>Esta é a minha primeira página do site. Se quiser, você pode acessar também a minha <a href="pag2.html" target="_self" rel="next">Segunda Página</a></p>
+
+    <!--Ao Utilizar o rel="next" e rel="prev", eu estou dizendo para o meu buscador qual será o caminho que aquele link interno que criei deve seguir. Visualmente nada muda, porém é algo muito importante que nao pode ser deixado de usar.-->
+
+    <p>Você também pode acessar a nossa <a href="notícias/pag3.html" target="_self" rel="next">Página de notícias</a></p>
+
+    <!--Ao usar a Target="_self" eu esto dizendo que o link será aberto dentro da minha própria página, sobrescrevendo a página atual.-->
+
+    <h1>Links Para Download</h1>
+    <ul>
+        <li><a href="livro/LDJ.pdf" download="LDJ.pdf"type="application/pdf" target="_blank" rel="next">Baixar o Livro em PDf</a></li>
+        <li><a href="livro/LDJ.zip" download="LDJ.zip" type="application/zip">Livro Compactado em ZIP</a></li>
+    </ul>
+
+    <!--Quando eu estiver criando links sen nada para colocar na href eu posso colocar a # que dará o sentido de que é um link vazio-->
+
+    <!--Posso entrar no site Media Types onde encontro o type que referência cada arquivo que eu quero que seja feito dwnload através do meu link-->
+
+    <!--Ao usar o download="LDJ.zip(ou)pdf(ou)qualquer outro formato de arquivo" eu estou mostrando que quero que o download seja feito diretamente sem a nescessidade de abertura de outra guia-->
+</body>
+</html>
