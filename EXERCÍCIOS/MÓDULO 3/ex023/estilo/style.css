@@ -41,3 +41,23 @@ header> h2 {
     font-family: var(--font-padrao);
     font-size: 1.2em;
 }
+
+main article {
+    text-align: initial;
+}
+
+.block {
+    display: inline-block;
+    margin: 10px;
+}
+
+.block img {
+    width: 150px; /* Ou o tamanho que desejar */
+    height: auto;
+    border-radius: 8px; /* Opcional: bordas arredondadas */
+    transition: transform 0.3s ease;
+}
+
+.block img:hover {
+    transform: scale(1.05); /* Efeito hover opcional */
+}
