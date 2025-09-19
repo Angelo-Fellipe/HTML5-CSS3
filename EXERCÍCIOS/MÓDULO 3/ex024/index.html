@@ -4,6 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            border-collapse: collapse;     
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .linha {
+            background-color: rgba(0, 255, 255, 0.577);
+        }
+
+        .result {
+            color: black;
+            background-color: rgb(255, 255, 255);
+        }
+
+        #l3 {
+            background-color: rgb(246, 255, 0);
+            background-position: right;
+        }
+
+        #d1 {
+            border: 0px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        #d2 {
+            border: 0px;
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
 </head>
 <body>
     <h1>Conhecendo Tabelas</h1>
@@ -28,11 +67,11 @@
             <td>1.600</td>
             <td>1.600</td>
         </tr>
-        <tr class="linha" id="l3">
-            <td></td>
-            <td></td>
-            <td>TOTAL</td>
-            <td>4.800</td>
+        <tr id="l3">
+            <td id="d1"></td>
+            <td id="d2"></td>
+            <td><strong>TOTAL</strong></td>
+            <td class="result"><strong>4.800</strong></td>
         </tr>
     </table>
 
