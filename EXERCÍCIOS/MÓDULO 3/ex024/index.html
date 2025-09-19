@@ -14,9 +14,18 @@
             border-collapse: collapse;     
         }
 
+        table#t2 {
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse;  
+        }
+        
         td {
             border: 1px solid black;
             padding: 8px;
+            text-align: center; /* Alinhamento Horizontal */
+            vertical-align: middle; /* "vertical-aligan"também conhecido como "Alinhamento Vertical".
+            Middle, também conhecido como "meio"*/
         }
 
         .linha {
@@ -55,9 +64,9 @@
         Se a HIERARQUIA não for obedecida, os dados que for colocando posteriormente apareceram ou encima ou embaixo da tabela.
     -->
     <header>
-        <h2>Somando o S</h1>
+        <h2>Aula de Tabelas 1</h2>
     </header>
-    <table>
+    <table id="t1">
         <tr class="linha"> <!-- Primeira Linha -->
             <td>JANEIRO</td>
             <td>FEVEREIRO</td>
@@ -73,6 +82,26 @@
             <td id="d2"></td>
             <td><strong>TOTAL</strong></td>
             <td class="result"><strong>4.800</strong></td>
+        </tr>
+    </table>
+
+    <h2>Aula de Tabelas 2</h2>
+
+    <table id="t2">
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
         </tr>
     </table>
 
