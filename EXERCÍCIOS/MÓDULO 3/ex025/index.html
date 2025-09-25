@@ -5,69 +5,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas 3</title>
     <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
         table {
-            width: 400px;
-            height: 150px;
+            width: 600px;
+            height: 150x;
             border-collapse: collapse;
         }
 
-        td {
+        thead {
+            background-color: rgb(81, 181, 172);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        td,th {
             border: 1px solid black;
-            padding: 8px;
-            
+            padding:10px;
+            font-size: 14px;
+        }
+
+        .liga {
+            text-align: center;
+        }
+
+        tfoot {
+            background-color: rgb(81, 181, 172);
+            font-family: Arial, Helvetica, sans-serif;
         }
 
     </style>
 </head>
 <body>
         <h1>Aula de Tabelas 3- Tabelas Grandes</h1><br>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH 
+            TFOOT
+                TR, TD, TH
+
+        -->
+
     <h2>Artistas mais ouvidos 2025</h2>
     <table>
-        <tr>
-            <td>ARTISTA</td>
-            <td>MÚSICA</td>
-        </tr>
+        <thead>
+            <tr id="header">
+                <th>ARTISTA</th>
+                <th>MÚSICA</th>
+            </tr>
+        </thead>
         <tr>
             <td>HUNTR/X: EJAE, Audrey Nuna & REI AMI</td>
-            <td>Golden</td>
+            <td class="liga">Golden</td>
         </tr>
         <tr>
             <td>Alex Warren</td>
-            <td>Ordinary</td>
+            <td class="liga">Ordinary</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
+            <td>Sabrina Carpenter</td>
+            <td class="liga">Manchild</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
+            <td>Morgan Wallen Featuring Tate McRae</td>
+            <td class="liga">What I Want</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
+            <td>Saja Boys: Andrew Choi, Neckwav, Danny Chung, Kevin Woo & samUIL Lee</td>
+            <td class="liga">Soda Pop</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
+            <td>Saja Boys: Andrew Choi, Neckwav, Danny Chung, Kevin Woo & samUIL Lee</td>
+            <td class="liga">Your Idol</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
+            <td>Ravyn Lenae</td>
+            <td class="liga">Love Me Not</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
+            <td>Justin Bieber</td>
+            <td class="liga">Daisies</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
+            <td>Teddy Swims</td>
+            <td class="liga">Lose Control</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
+            <td>HUNTR/X: EJAE, Audrey Nuna & REI AMI</td>
+            <td class="liga">How It's Done</td>
         </tr>
-
+        <tr>
+            <td>Lady Gaga & Bruno Mars</td>
+            <td class="liga">Die With A Smile</td>
+        </tr>
+        <tr>
+            <td>Sabrina Carpenter</td>
+            <td class="liga">Tears</td>
+        </tr>
+        <tr>
+            <td>Morgan Wallen</td>
+            <td class="liga">I Got Better</td>
+        </tr>
+        <tr>
+            <td>Leon Thomas</td>
+            <td class="liga">Mutt</td>
+        </tr>
+        <tr>
+            <td>Shaboozey</td>
+            <td class="liga">A Bar Sont (Tipsy)</td>
+        </tr>
+        <tr>
+            <td>Benson Boone</td>
+            <td class="liga">Beautiful Things</td>
+        </tr>
+        <tr>
+            <td>Morgan Wallen</td>
+            <td class="liga">Just In Case</td>
+        </tr>
+        <tr>
+            <td>sombr</td>
+            <td class="liga">Undressed</td>
+        </tr>
+        <tr>
+            <td>HUNTR/X: EJAE, Audrey Nuna & REI AMI</td>
+            <td class="liga">What It Sounds Like</td>
+        </tr>
+        <tr>
+            <td>Shaboozey</td>
+            <td class="liga">Good News</td>
+        </tr>
+        <tfoot>
+            <th>Mês da pesquisa</th>
+            <td class="liga"><strong>Setembro</strong></td>
+        </tfoot>
     </table>
     
 </body>
