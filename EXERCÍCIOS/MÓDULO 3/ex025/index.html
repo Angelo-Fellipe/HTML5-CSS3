@@ -15,9 +15,36 @@
             border-collapse: collapse;
         }
 
-        thead {
+        thead, tfoot {
             background-color: rgb(81, 181, 172);
             font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* ou se eu quiser zebrar as colunas alternadamente posso usar dessa forma.
+        
+        tbody > tr:nth-child(odd) {
+            background-color: rgb(204, 187, 221);
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: rgb(68, 65, 71;
+        }
+
+        no lugar de "odd" (impar) eu posso usar (2n-1)
+        no lugar de "even" (par) eu posso usar (2n)
+
+        essa forma é interessante caso eu esteja minupulando uma tabela onde o fundo do meu site contenha imagens ou uma cor diferente para ao qual eu desejo que a tabela fique.
+        */
+
+        tbody > tr:nth-child(odd) {
+            background-color: rgb(204, 187, 221);
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(255, 111, 111);
         }
 
         td,th {
@@ -30,9 +57,9 @@
             text-align: center;
         }
 
-        tfoot {
-            background-color: rgb(81, 181, 172);
-            font-family: Arial, Helvetica, sans-serif;
+        pre {
+            font-size: 20px;
+            padding: 10px;
         }
 
     </style>
@@ -42,6 +69,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION (SERIA COMO UMA LEGENDA PARA AS TABELAS)
             THEAD
                 TR, TD, TH
             TBODY
@@ -51,99 +79,120 @@
 
         -->
 
-    <h2>Artistas mais ouvidos 2025</h2>
     <table>
+        <caption>Artista Mais Ouvidos de 2025</caption>
         <thead>
             <tr id="header">
-                <th>ARTISTA</th>
-                <th>MÚSICA</th>
+                <th scope="col">ARTISTA</th>
+                <th scope="col">MÚSICA</th>
             </tr>
         </thead>
-        <tr>
-            <td>HUNTR/X: EJAE, Audrey Nuna & REI AMI</td>
-            <td class="liga">Golden</td>
-        </tr>
-        <tr>
-            <td>Alex Warren</td>
-            <td class="liga">Ordinary</td>
-        </tr>
-        <tr>
-            <td>Sabrina Carpenter</td>
-            <td class="liga">Manchild</td>
-        </tr>
-        <tr>
-            <td>Morgan Wallen Featuring Tate McRae</td>
-            <td class="liga">What I Want</td>
-        </tr>
-        <tr>
-            <td>Saja Boys: Andrew Choi, Neckwav, Danny Chung, Kevin Woo & samUIL Lee</td>
-            <td class="liga">Soda Pop</td>
-        </tr>
-        <tr>
-            <td>Saja Boys: Andrew Choi, Neckwav, Danny Chung, Kevin Woo & samUIL Lee</td>
-            <td class="liga">Your Idol</td>
-        </tr>
-        <tr>
-            <td>Ravyn Lenae</td>
-            <td class="liga">Love Me Not</td>
-        </tr>
-        <tr>
-            <td>Justin Bieber</td>
-            <td class="liga">Daisies</td>
-        </tr>
-        <tr>
-            <td>Teddy Swims</td>
-            <td class="liga">Lose Control</td>
-        </tr>
-        <tr>
-            <td>HUNTR/X: EJAE, Audrey Nuna & REI AMI</td>
-            <td class="liga">How It's Done</td>
-        </tr>
-        <tr>
-            <td>Lady Gaga & Bruno Mars</td>
-            <td class="liga">Die With A Smile</td>
-        </tr>
-        <tr>
-            <td>Sabrina Carpenter</td>
-            <td class="liga">Tears</td>
-        </tr>
-        <tr>
-            <td>Morgan Wallen</td>
-            <td class="liga">I Got Better</td>
-        </tr>
-        <tr>
-            <td>Leon Thomas</td>
-            <td class="liga">Mutt</td>
-        </tr>
-        <tr>
-            <td>Shaboozey</td>
-            <td class="liga">A Bar Sont (Tipsy)</td>
-        </tr>
-        <tr>
-            <td>Benson Boone</td>
-            <td class="liga">Beautiful Things</td>
-        </tr>
-        <tr>
-            <td>Morgan Wallen</td>
-            <td class="liga">Just In Case</td>
-        </tr>
-        <tr>
-            <td>sombr</td>
-            <td class="liga">Undressed</td>
-        </tr>
-        <tr>
-            <td>HUNTR/X: EJAE, Audrey Nuna & REI AMI</td>
-            <td class="liga">What It Sounds Like</td>
-        </tr>
-        <tr>
-            <td>Shaboozey</td>
-            <td class="liga">Good News</td>
-        </tr>
+        <tbody>
+            <tr>
+                <td>HUNTR/X: EJAE, Audrey Nuna & REI AMI</td>
+                <td class="liga">Golden</td>
+            </tr>
+            <tr>
+                <td>Alex Warren</td>
+                <td class="liga">Ordinary</td>
+            </tr>
+            <tr>
+                <td>Sabrina Carpenter</td>
+                <td class="liga">Manchild</td>
+            </tr>
+            <tr>
+                <td>Morgan Wallen Featuring Tate McRae</td>
+                <td class="liga">What I Want</td>
+            </tr>
+            <tr>
+                <td>Saja Boys: Andrew Choi, Neckwav, Danny Chung, Kevin Woo & samUIL Lee</td>
+                <td class="liga">Soda Pop</td>
+            </tr>
+            <tr>
+                <td>Saja Boys: Andrew Choi, Neckwav, Danny Chung, Kevin Woo & samUIL Lee</td>
+                <td class="liga">Your Idol</td>
+            </tr>
+            <tr>
+                <td>Ravyn Lenae</td>
+                <td class="liga">Love Me Not</td>
+            </tr>
+            <tr>
+                <td>Justin Bieber</td>
+                <td class="liga">Daisies</td>
+            </tr>
+            <tr>
+                <td>Teddy Swims</td>
+                <td class="liga">Lose Control</td>
+            </tr>
+            <tr>
+                <td>HUNTR/X: EJAE, Audrey Nuna & REI AMI</td>
+                <td class="liga">How It's Done</td>
+            </tr>
+            <tr>
+                <td>Lady Gaga & Bruno Mars</td>
+                <td class="liga">Die With A Smile</td>
+            </tr>
+            <tr>
+                <td>Sabrina Carpenter</td>
+                <td class="liga">Tears</td>
+            </tr>
+            <tr>
+                <td>Morgan Wallen</td>
+                <td class="liga">I Got Better</td>
+            </tr>
+            <tr>
+                <td>Leon Thomas</td>
+                <td class="liga">Mutt</td>
+            </tr>
+            <tr>
+                <td>Shaboozey</td>
+                <td class="liga">A Bar Sont (Tipsy)</td>
+            </tr>
+            <tr>
+                <td>Benson Boone</td>
+                <td class="liga">Beautiful Things</td>
+            </tr>
+            <tr>
+                <td>Morgan Wallen</td>
+                <td class="liga">Just In Case</td>
+            </tr>
+            <tr>
+                <td>sombr</td>
+                <td class="liga">Undressed</td>
+            </tr>
+            <tr>
+                <td>HUNTR/X: EJAE, Audrey Nuna & REI AMI</td>
+                <td class="liga">What It Sounds Like</td>
+            </tr>
+            <tr>
+                <td>Shaboozey</td>
+                <td class="liga">Good News</td>
+            </tr>
+        </tbody>
         <tfoot>
-            <th>Mês da pesquisa</th>
+            <th scope="row">Mês da pesquisa</th>
             <td class="liga"><strong>Setembro</strong></td>
         </tfoot>
     </table>
+
+    <h2>
+        Cabeçalho fixo em tabelas grandes
+    </h2>
+
+    <p>
+        <pre>
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;th&gt;&lt;/th&gt;
+                    &lt;th&gt;&lt;/th&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+        </pre>
+    </p>
     
 </body>
 </html>
