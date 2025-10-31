@@ -9,15 +9,27 @@
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
 
+        #ppp {
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
         table {
             width: 600px;
             height: 150x;
             border-collapse: collapse;
+            position: relative;
         }
 
         thead, tfoot {
             background-color: rgb(81, 181, 172);
             font-family: Arial, Helvetica, sans-serif;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(81, 181, 172);
         }
 
         /* ou se eu quiser zebrar as colunas alternadamente posso usar dessa forma.
@@ -34,6 +46,21 @@
         no lugar de "even" (par) eu posso usar (2n)
 
         essa forma é interessante caso eu esteja minupulando uma tabela onde o fundo do meu site contenha imagens ou uma cor diferente para ao qual eu desejo que a tabela fique.
+
+
+
+        ------------------------------------
+
+        table {
+            position: relative;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(81, 181, 172);
+        }
+            (o ultimo serve para um cabesalho fixo na tabela mas nao funciona em todos os navegadores)
         */
 
         tbody > tr:nth-child(odd) {
@@ -78,6 +105,14 @@
                 TR, TD, TH
 
         -->
+    <P id="ppp"> 
+        Valores possíveis do scope:<br>
+        col: Indica que o cabeçalho se aplica a uma coluna.<br>
+        row: Indica que o cabeçalho se aplica a uma linha.<br>
+        colgroup: Indica que o cabeçalho se aplica a um grupo de colunas.<br>
+        rowgroup: Indica que o cabeçalho se aplica a um grupo de linhas.<br>
+        Ele nao é um efeito visual, é mais como uma forma de organizar a tabela e replicar essa informação para que fique de fácil compreenção.
+    </P>
 
     <table>
         <caption>Artista Mais Ouvidos de 2025</caption>
@@ -182,14 +217,31 @@
     <p>
         <pre>
             &lt;table&gt;
+                &lt;caption&gt;&lt;caption&gt;
                 &lt;thead&gt;
-                    &lt;th&gt;&lt;/th&gt;
-                    &lt;th&gt;&lt;/th&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;&lt;/th&gt;
+                        &lt;th&gt;&lt;/th&gt;
+                    &lt;/tr&gt;
                 &lt;/thead&gt;
                 &lt;tbody&gt;
-                    &lt;td&gt;&lt;/td&gt;
-                    &lt;td&gt;&lt;/td&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;/td&gt;
+                        &lt;td&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;/td&gt;
+                        &lt;td&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;/td&gt;
+                        &lt;td&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
                 &lt;/tbody&gt;
+                &lt;tfoot&gt;
+                    &lt;th&gt;&lt;/th&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                &lt;/tfoot&gt;
             &lt;/table&gt;
         </pre>
     </p>
