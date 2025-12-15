@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABELAS 4</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p {
+            font-size: 25px;
+            padding: 5px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 300px;
+        }
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        .tabl3 {
+            display: flex;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclando tabelas</h1>
+
+    <table>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>K</td>
+            <td>L</td>
+        </tr>
+    </table>
+
+        <h2>Mesclagem em coluna</h2>
+
+    <div class="tabl3">
+        <table>
+            <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>E</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>G</td>
+                <td>H</td>
+                <td>I</td>
+            </tr>
+            <tr>
+                <td>J</td>
+                <td>K</td>
+                <td>L</td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td>A</td>
+                <td colspan="2">B</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>E</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>G</td>
+                <td>H</td>
+                <td>I</td>
+            </tr>
+            <tr>
+                <td>J</td>
+                <td>K</td>
+                <td>L</td>
+            </tr>
+        </table>
+    </div>
+
+    <p>Note que aqui retirei a célula "C" e agora eu quero meclar para que a célula "B" ocupe as duas colunas, para isso eu usei o: &lt;td colaspan="2"&gt;B&lt;/td&gt;.<br></p>
+
+    <h2>Mesclagem em linha</h2>
+
+    <div class="tabl3">
+        <table>
+            <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>E</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>G</td>
+                <td>H</td>
+                <td>I</td>
+            </tr>
+            <tr>
+                <td>J</td>
+                <td>K</td>
+                <td>L</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td rowspan="3">D</td>
+                <td>E</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>H</td>
+                <td>I</td>
+            </tr>
+            <tr>
+                <td>K</td>
+                <td>L</td>
+            </tr>
+        </table>
+    </div>
+
+    <p>Note que aqui retirei as células "G e J" e agora eu quero meclar para que a célula "D" ocupe as três linhas, para isso eu usei o: &lt;td rowspan="2"&gt;D&lt;/td&gt;.<br></p>
+
+    <p>
+        <strong style="color: red; background-color: rgb(250, 250, 101); font-size: 30px;">!! NOTE QUE USEI O NÚMERO (2) e (3) ALI COMO INDICATIVO DE QUANTAS COLULAS/LINHAS EU QUERO QUE ESSA CÉLULA OCUPE !!</strong>.
+    </p>
+</body>
+</html>
