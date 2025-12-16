@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p {
+            font-size: 25px;
+            padding: 5px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 300px;
+        }
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .cnome {
+            background-color: green;
+        }
+
+        .csexo {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cnome" span="2">
+            <col class="csexo" span="2">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Paty</td>
+            <td>F</td>
+            <td>21</td>
+            <td>Artista</td>
+        </tr>
+        <tr>
+            <td>Bia</td>
+            <td>F</td>
+            <td>18</td>
+            <td>Estudante</td>
+        </tr>
+    </table>
+    
+    <p>
+        <code>
+            &ltcolgroupgt <br>
+            &ltcol class="cnome" span="2"&gt <br>
+            &ltcol class="csexo" span="2"&gt <br>
+           &lt/colgroup&gt <br>
+        </code>
+
+        Note que eu usei deste artifício para ficar mais fácil e rápido para poder simplificar a minha marcação de colunas em uma tabela! já o <strong>span</strong> foi usado para sinalizar quantas colunas eu quero que isso se repita como visto anteriormente no conceito de ocupação de espaço para mesclagem de células, foi o mesmo sentido mas com aplicação de ações diferentes.
+    </p>
+</body>
+</html>
